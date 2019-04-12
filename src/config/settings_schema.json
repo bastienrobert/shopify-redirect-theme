@@ -1,0 +1,28 @@
+[
+  {
+    "name": "theme_info",
+    "theme_name": "Redirect",
+    "theme_author": "bastienrobert",
+    "theme_version": "1.0.0",
+    "theme_documentation_url": "https://github.com/bastienrobert/shopify-redirect-theme",
+    "theme_support_url": "https://github.com/bastienrobert/shopify-redirect-theme/issues"
+  },
+  {
+    "name": "Theme redirection",
+    "settings": [
+      {
+        "type": "text",
+        "id": "redirect_uri",
+        "label": "Redirect URL",
+        "placeholder": "https://my-url.com"
+      },
+      {
+        "type": "textarea",
+        "id": "redirect_rules",
+        "label": "Redirect rules",
+        "info": "/:category=>/hello/:category",
+        "placeholder": "Templating:\nShopify URL with some :var => your URL"
+      }
+    ]
+  }
+]

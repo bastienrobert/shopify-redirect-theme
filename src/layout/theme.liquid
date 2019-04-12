@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="{{ shop.locale }}">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+
+  {% include 'script-tags', layout: 'theme' %}
+  <script>
+    window.REDIRECT_ROOT = "{{ settings.redirect_uri }}";
+    window.REDIRECT_RULES = "{{ settings.redirect_rules }}".split(' ');
+  </script>
+
+  {{ content_for_header }}
+</head>
+
+<body>
+  {{ content_for_layout }}
+</body>
+</html>

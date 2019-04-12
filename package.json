@@ -1,0 +1,30 @@
+{
+  "name": "redirect-theme",
+  "version": "1.0.0",
+  "private": true,
+  "author": "Bastien Robert",
+  "description": "Redirects from your store to another app.",
+  "keywords": [
+    "shopify",
+    "theme"
+  ],
+  "bugs": "https://github.com/bastienrobert/shopify-redirect-theme/issues",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bastienrobert/shopify-redirect-theme.git"
+  },
+  "devDependencies": {
+    "@shopify/slate-tools": "1.0.0-beta.12"
+  },
+  "scripts": {
+    "start": "slate-tools start",
+    "watch": "slate-tools start --skipFirstDeploy",
+    "build": "slate-tools build",
+    "deploy": "slate-tools build && slate-tools deploy",
+    "zip": "slate-tools build && slate-tools zip"
+  },
+  "dependencies": {
+    "path-to-regexp": "^3.0.0"
+  }
+}
